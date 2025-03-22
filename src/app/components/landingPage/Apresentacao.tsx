@@ -40,12 +40,10 @@ function Apresentacao() {
 
   return (
     <div id='apresentacao' className='flex justify-center items-center flex-col gap-4'>
-        <div id='assinantes' className=''><DestaqueAssinantes/></div>
-        <div id='texto-apresentacao'><TextoSection /></div>
-        <div id='texto-apresentacao'><BtnAssinatura /></div>
-        <div id='texto-apresentacao'><DownloadBtn /></div>
-        
-        
+      <div id='assinantes' className=''><DestaqueAssinantes/></div>
+      <div id='texto-apresentacao'><TextoSection /></div>
+      <div id='texto-apresentacao'><BtnAssinatura /></div>
+      <div id='texto-apresentacao'><DownloadBtn /></div>
     </div>
   )
 }

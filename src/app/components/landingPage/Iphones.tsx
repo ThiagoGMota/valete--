@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Iphones = ({img}:{img:string}) => {
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block ">
       <div className="relative">
         {/* Carcaça do iPhone */}
         <Image src={"/carcacaIphone.svg"} alt="Carcaça de iPhone" width={210} height={502} />
