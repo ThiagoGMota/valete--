@@ -10,7 +10,7 @@ import { MenuCompleto, MenuMobile } from './Menu'
 export const Navbar = () => {
   
   return (
-    <div className=' flex py-2 px-5 items-center justify-between md:px-32 lg:px-40 md:py-4 border-2'>
+    <div className='flex py-2 px-5 items-center justify-between md:px-32 lg:px-40 md:py-4 border-2'>
       <Link href={'/'} className='md:w-1/6'>
         <Image src={'/logo.avif'} alt='Logo Valete+' width={28} height={28} className='md:w-9'/>
       </Link>
