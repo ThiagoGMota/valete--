@@ -18,18 +18,18 @@ function Apresentacao() {
         opacity: 0,
         y: "-10",
         ease: "power1.inOut",
-        duration: .5,
-        delay:.5
+        duration: 0.5,
+        delay:0.5
       })
-      gsap.fromTo("#texto-apresentacao",{
+      gsap.fromTo(".texto-apresentacao",{
         opacity: 0,
         y: 40
       },{
         opacity: 1,
         y: 0,
         stagger: .1,
-        duration: .5,
-        delay:.5
+        duration: 0.5,
+        delay:0.5
       })
     }
   }, [mounted])
@@ -39,11 +39,11 @@ function Apresentacao() {
   }
 
   return (
-    <div id='apresentacao' className='flex justify-center items-center flex-col gap-4'>
+    <div id='apresentacao' className='flex justify-center items-center flex-col gap-4 pt-4'>
       <div id='assinantes' className=''><DestaqueAssinantes/></div>
-      <div id='texto-apresentacao'><TextoSection /></div>
-      <div id='texto-apresentacao'><BtnAssinatura /></div>
-      <div id='texto-apresentacao'><DownloadBtn /></div>
+      <div className='texto-apresentacao'><TextoSection /></div>
+      <div className='texto-apresentacao'><BtnAssinatura /></div>
+      <div className='texto-apresentacao'><DownloadBtn /></div>
     </div>
   )
 }

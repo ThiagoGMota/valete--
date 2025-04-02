@@ -34,23 +34,22 @@ const AppApresentacao = () => {
           },{
             opacity:1,
             stagger:.5,
-            delay:.3,
           })
         }
     }, [mounted])
     
     if (!mounted) {
-        return <div></div>;
+        return <div className='h-screen'></div>;
     }
     
     return (
-        <div className='border-2 border-violet-600 '>
-            <div id='vitrine_1' className='md:hidden relative'>
+        <div>
+            <div id='vitrine_1' className='md:hidden relative overflow-hidden'>
                 <div className='absolute top-10  left-16 sm:left-48 z-20  span_animado'>
                     <Span_1 />
                 </div>
 
-                <div id='iphone_sm' className='flex items-center justify-center rotate-[28deg] '>
+                <div id='iphone_sm' className='flex items-center justify-center rotate-[28deg] scale-95'>
                     <Iphones img={imagem1} />
                 </div>
 

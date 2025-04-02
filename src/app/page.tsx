@@ -1,8 +1,18 @@
 
+import About from "./components/landingPage/About"
 import AppApresentacao from "./components/landingPage/appApresentacao"
 import Apresentacao from "./components/landingPage/Apresentacao"
-import Carrosel from "./components/landingPage/Carrosel"
+import CardCursos from "./components/landingPage/CardCursos"
+import Depoimentos from "./components/landingPage/Depoimentos"
+import DocumentariosSlider from "./components/landingPage/DocumentariosSlider"
+import Footer from "./components/landingPage/Footer"
+import Logos from "./components/landingPage/Logos"
 import { Navbar } from "./components/landingPage/Navbar"
+import Novidades from "./components/landingPage/Novidades"
+import Perguntas from "./components/landingPage/Perguntas"
+import Price from "./components/landingPage/Price"
+import ResumoFinal from "./components/landingPage/ResumoFinal"
+import Revista from "./components/landingPage/Revista"
 
 export default function Home() {
 
@@ -19,17 +29,40 @@ export default function Home() {
       <div className="pt-16 ">
         <AppApresentacao />
       </div>
-      <div className="mt-4 relative md:bottom-52 ">
-        <Carrosel />
-        <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi illum a ab neque enim beatae nostrum odio dolores blanditiis sequi necessitatibus aspernatur, eum similique totam est, dolore veniam. Eaque!
-        Velit, error quod quam beatae eos nisi esse, voluptas accusamus, facere hic officia dicta dolorum temporibus corrupti molestias eaque ex sunt aut veritatis laudantium assumenda aspernatur? Quas accusamus dignissimos tempora!
-        Reiciendis quibusdam dolor officiis hic! Doloribus eveniet illo voluptatibus quas rerum ipsa molestiae esse eos, facilis accusamus placeat dolores sapiente animi, reprehenderit natus! Possimus consectetur reiciendis quos quas!
-        Repudiandae natus quae temporibus quisquam rerum perspiciatis minus voluptas nemo voluptate saepe porro tenetur recusandae ad est, impedit sequi quod voluptatum dignissimos cupiditate alias, accusantium reiciendis libero quas! Quidem, itaque.
-        Officiis error provident suscipit ad exercitationem optio sit ullam, deleniti fugiat veniam quam aut voluptatum expedita, animi, necessitatibus delectus impedit aperiam quia ea unde quasi. Expedita, repellat obcaecati. Inventore, sunt!</p>
+
+      <div className="mt-4 relative md:bottom-52 bg-[#FFFFEA] flex flex-col items-center justify-start  ">
+        <div className="w-[90%] lg:w-[70%] my-8 ">
+            <Logos />
+          
+          <div>
+            <About />
+          </div>
+            
+          <div className="w-full overflow-hidden">
+            <DocumentariosSlider />
+          </div>
+
+          <Revista />
+
+          <div className="flex  flex-col justify-center items-center gap-8  w-full">
+            <CardCursos />
+
+            <div className="scale-90 flex flex-col ">
+              <Novidades />
+            </div>
+            <div className="mt-[500px] md:mt-60 lg:mt-20 xl:mt-0 ">
+              <Price />
+            </div>
+
+          </div>
+        </div>
       </div>
+      <Depoimentos />
+      <Perguntas />
+      <ResumoFinal/>
+      <div className="relative">
+        <Footer />
       </div>
-      
     </main>
   )
 }

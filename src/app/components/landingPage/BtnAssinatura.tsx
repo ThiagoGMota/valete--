@@ -5,7 +5,7 @@ const BtnAssinatura = () => {
   return (
     <Link 
         href={'/pay'}
-        className='flex items-center justify-center bg-[#d11303] text-white px-[14px]  w-[158px] h-[55px] rounded-xl font-bold text-[18px]'
+        className='flex mt-5 items-center justify-center bg-[#d11303] text-white px-[14px]  w-[158px] h-[55px] rounded-xl font-bold text-[18px]'
     >
         Assinar Agora
     </Link>
