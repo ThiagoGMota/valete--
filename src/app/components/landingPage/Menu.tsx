@@ -21,7 +21,6 @@ interface Links {
     { id: 4, title: "Debate",     url: "/" },
 
   ]
-  const user = false
 
 export const MenuMobile = () => {
   const [open, setOpen] = useState(false)

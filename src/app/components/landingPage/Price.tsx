@@ -1,6 +1,5 @@
 import React from 'react'
 import CardPrice from './assinatura/CardPrice'
-import Image from 'next/image'
 import { Garantia } from './assinatura/Garantia'
 import { CircleCheck } from 'lucide-react'
 
